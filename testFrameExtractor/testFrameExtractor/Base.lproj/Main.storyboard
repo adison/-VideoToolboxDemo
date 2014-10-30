@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuG-eD-zaO">
+                                <rect key="frame" x="285" y="554" width="30" height="30"/>
+                                <state key="normal" title="play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="play:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0rX-PM-TPy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FPS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Cf-bK-cno">
+                                <rect key="frame" x="552" y="559" width="32" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="Db5-XD-kOG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teS-j0-jPQ">
+                                <rect key="frame" x="22" y="554" width="34" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VpF-Js-YFa">
+                                <rect key="frame" x="16" y="555" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="jjG-6y-dRE"/>
+                                    <constraint firstAttribute="height" constant="30" id="xl5-Rf-6q0"/>
+                                </constraints>
+                                <state key="normal" title="showTime">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showTime:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6Qd-Jl-m6h"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rtF-Bl-Y6w">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="532"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IXP-kF-WZ3">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="532"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IXP-kF-WZ3" secondAttribute="trailing" id="0Jy-2P-GJS"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="vuG-eD-zaO" secondAttribute="bottom" constant="16" id="BZ3-Hh-BhA"/>
+                            <constraint firstAttribute="trailing" secondItem="rtF-Bl-Y6w" secondAttribute="trailing" id="KDl-M5-Ko4"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="VpF-Js-YFa" secondAttribute="bottom" constant="15" id="L94-f9-KkS"/>
+                            <constraint firstItem="1Cf-bK-cno" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Nnx-5Y-0uE"/>
+                            <constraint firstItem="rtF-Bl-Y6w" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="OdK-gw-hRa"/>
+                            <constraint firstItem="vuG-eD-zaO" firstAttribute="top" secondItem="IXP-kF-WZ3" secondAttribute="bottom" constant="22" id="PW5-O3-p8o"/>
+                            <constraint firstItem="IXP-kF-WZ3" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Qm8-gf-jOm"/>
+                            <constraint firstItem="vuG-eD-zaO" firstAttribute="top" secondItem="rtF-Bl-Y6w" secondAttribute="bottom" constant="22" id="YIt-W8-OSd"/>
+                            <constraint firstItem="IXP-kF-WZ3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="nW5-7d-VbT"/>
+                            <constraint firstItem="VpF-Js-YFa" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="oyz-8P-iZf"/>
+                            <constraint firstAttribute="centerX" secondItem="vuG-eD-zaO" secondAttribute="centerX" id="tGk-Ub-Lfd"/>
+                            <constraint firstItem="rtF-Bl-Y6w" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="ybv-ZP-qk6"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1Cf-bK-cno" secondAttribute="bottom" constant="20" id="zMt-ey-wZS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="teS-j0-jPQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="FPSLabel" destination="1Cf-bK-cno" id="bry-ow-jlI"/>
+                        <outlet property="imageView" destination="rtF-Bl-Y6w" id="GSv-VD-d4E"/>
+                        <outlet property="layerView" destination="IXP-kF-WZ3" id="IrZ-B7-Et8"/>
+                        <outlet property="playBtn" destination="vuG-eD-zaO" id="UFs-Tl-zPp"/>
+                        <outlet property="timeBtn" destination="VpF-Js-YFa" id="jyj-lf-AKb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="362"/>
+        </scene>
+    </scenes>
+</document>
